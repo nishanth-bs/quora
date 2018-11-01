@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quora</title>
+	<link rel="stylesheet" href="/styles/main.min.css">
+</head>
+<body>
+<div class="container">
+	<header class="header">
+		<span class="header__logo">Quora</span>
+		<!-- TODO: Replace all the image placeholders with valid svg's -->
+		<ul class="nav-options">
+			<li class="nav-options__item">
+				<svg class="nav-options__icon">
+					<use xlink:href="img/symbol-defs.svg#icon-home"></use>
+				</svg>
+				<a href="#" class="nav-options__name">Home</a>
+			</li>
+			<li class="nav-options__item">
+				<svg class="nav-options__icon">
+					<use xlink:href="img/symbol-defs.svg#icon-edit"></use>
+				</svg>
+				<a href="#" class="nav-options__name">Answer</a>
+			</li>
+			<li class="nav-options__item">
+				<svg class="nav-options__icon">
+					<use xlink:href="img/symbol-defs.svg#icon-people"></use>
+				</svg>
+				<a href="#" class="nav-options__name">Following</a>
+			</li>
+			<li class="nav-options__item">
+				<svg class="nav-options__icon">
+					<use xlink:href="img/symbol-defs.svg#icon-bell"></use>
+				</svg>
+				<a href="#" class="nav-options__name">Notifications</a>
+			</li>
+		</ul>
+		<form action="#" class="search">
+			<input placeholder="Enter question" type="text" class="search__input">
+			<button class="search__button">
+				<svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+        </svg>
+			</button>
+		</form>
+		<img src="img/asdf" alt="!" class="user-avatar">
+		<button class="primary-button">Add Question</button>
+	</header>
+</div>
+
+</body>
+</html>
