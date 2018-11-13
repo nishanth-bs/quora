@@ -11,7 +11,9 @@
 		--color-grey-dark-1: #333;
 		--color-grey-dark-2: #777;
 		--color-grey-dark-3: #999;
-		--line: 1px solid var(--color-grey-light-4); }
+		--line: 1px solid var(--color-grey-light-4);
+		--font-global: 'PT Sans', sans-serif;
+		--font-title: 'Rock Salt', cursive; }
 
 * {
 		margin: 0;
@@ -19,15 +21,17 @@
 
 html {
 		box-sizing: border-box;
-		font-size: 62.5%; }
+		font-size: 62.5%;
+		font-family: 'PT Sans', sans-serif; }
 
 *,
 *::after,
 *::before {
-		box-sizing: inherit; }
+		box-sizing: inherit;
+		font-family: inherit; }
 
 body {
-		font-family: sans-serif;
+		font-family: 'PT Sans', sans-serif;
 		font-weight: 400;
 		line-height: 1.6; }
 
@@ -61,7 +65,7 @@ body {
 		background-color: var(--color-grey-light-3);
 		border-bottom: var(--line); }
 		.header__logo {
-				font-style: sans-serif;
+				font-style: 'Rock Salt', cursive;
 				font-size: 3rem;
 				font-weight: 800;
 				color: var(--color-primary-dark);
@@ -173,3 +177,34 @@ body {
   }
 }
 */
+.main-content {
+		display: flex;
+		background-color: var(--color-grey-light-1); }
+
+.sidebar {
+		flex: 0 0 200px; }
+
+.center {
+		flex: 1; }
+
+.leftbar {
+		flex: 0 0 200px; }
+
+.sidebar-list {
+		list-style: none; }
+		.sidebar-list__item {
+				cursor: pointer;
+				transition: all .2s; }
+				.sidebar-list__item:hover {
+						background-color: var(--color-primary-light-1);
+						border-radius: 0px 300px 300px 0px; }
+		.sidebar-list__link:link, .sidebar-list__link:visited {
+				display: block;
+				width: 98%;
+				padding: 1.5rem 3rem;
+				text-decoration: none;
+				font-size: 1.6rem;
+				font-weight: 800;
+				color: var(--color-grey-dark-1); }
+				.sidebar-list__link:link:hover, .sidebar-list__link:visited:hover {
+						color: #fff; }

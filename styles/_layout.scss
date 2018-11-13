@@ -1,4 +1,4 @@
-
+// main: ./main.scss
 //////////////////////////////////////
 // HEADER PART
 
@@ -11,7 +11,7 @@
   background-color: var(--color-grey-light-3);
   border-bottom: var(--line);
   &__logo{
-    font-style: sans-serif;
+    font-style: 'Rock Salt', cursive;
     font-size: 3rem;
     font-weight: 800;
     color: var(--color-primary-dark);
@@ -161,4 +161,50 @@
 */
 .user-avatar{
 
+}
+
+//////////////////////////////////////////////////
+//MAIN CONTENT
+.main-content{
+  display: flex;
+
+  background-color:var(--color-grey-light-1);
+}
+.sidebar{
+  flex: 0 0 200px;
+}
+
+.center{
+  flex: 1;
+}
+
+.leftbar{
+  flex: 0 0 200px;
+}
+
+.sidebar-list{
+  list-style: none;
+
+  &__item{
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+      background-color: var(--color-primary-light-1);
+      border-radius: 0px 300px 300px 0px;
+
+    }
+  }
+  &__link:link,
+  &__link:visited{
+    display: block;
+    width: 98%;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-grey-dark-1);
+    &:hover{
+      color: #fff;
+    }
+  }
 }
