@@ -1,0 +1,65 @@
+//main: ./main.scss
+
+/////////////////////////////////////////////
+//well to display the content withing the box
+//could be answer/ question/ both/ anything
+.well{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 2.5rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,0.5);
+  background-color: #fff;
+  border-radius: 2rem;
+
+  &__question{
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+
+    padding: 1rem;
+  }
+
+  &__answer{
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  &__user{
+    display: flex;
+    align-items: center;
+
+    padding: 0rem 1rem;
+  }
+  &__user-name{
+    flex: 1;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  &__user-avatar{
+    padding: 0rem .5rem;
+    flex: 0 0 5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 1rem;
+  }
+
+  &__vote--up, &__vote--down{
+    cursor: pointer;
+    height: 4.5rem;
+    width: 3rem;
+    stroke: var(--color-primary-dark);
+    fill: transparent;
+    margin: 0rem 2rem;
+  }
+
+}
+
+.ask-question__input{
+  width: 100%;
+  resize: both;
+
+}
